@@ -72,7 +72,7 @@ class ParticipationView  extends AbstractView{
             {
                 $chaine .='<a href="'.$http_req->script_name.'/organisation/ajouter_epreuve/?id='.$id.'" class="btn btn-blue">Ajouter nouvelle épreuve</a>';
             }
-            if(!empty($this->data) && (!isset($_SESSION['profil'])) && ((isset($_SESSION['profil']) && $_SESSION['profil'] != 'organisateur')))
+            if(!empty($this->data))
             {
                 $chaine .= '<input type="submit" name="submit" value="Je m\'inscris" class="btn btn-blue" />';
             }
