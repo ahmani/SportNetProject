@@ -132,7 +132,7 @@ class OrganisationControl{
 			$return = $event->save();
 			if($return)
 			{
-					header('Location:'.$this->request->script_name.'/participation/visualiser_evenement/?id='.$return);
+					header('Location:'.$this->request->script_name.'/app/view/?id='.$return);
 			}
 		}
 	}
