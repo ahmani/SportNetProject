@@ -1,0 +1,60 @@
+.btn {
+  font-family: "Bitter";
+  font-size: 100%;
+  padding: 11px 24px;
+  color: #444;
+  border: 0 transparent;
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 7px;
+  display: inline-block;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center; }
+
+.btn:hover, .btn:focus {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1)); }
+
+.btn-blue {
+  padding: 7px 24px !important;
+  background-color: #002c73 !important;
+  color: #fff;
+  font-size: 14px !important; }
+
+.btn-green {
+  background-color: rgba(5, 90, 5, 0.83) !important;
+  color: #fff; }
+
+.btn-submit {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.btn-fat {
+  border: 0px;
+  border-radius: 0px; }
+
+.btn-large {
+  width: 100%; }
+
+div.alert {
+  width: 100%;
+  margin-top: 14px;
+  min-height: 44px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: bitter;
+  padding: 14px;
+  letter-spacing: 0.4px; }
+  div.alert.info {
+    background-color: #0690bb; }
+  div.alert.danger {
+    background-color: #ca3c3c; }
+  div.alert.avertissement {
+    background-color: #df7514; }
+  div.alert.succes {
+    background-color: #1cb841; }
+  div.alert.soft {
+    background-color: #bac5bd; }
+
+/*# sourceMappingURL=boites.css.map */

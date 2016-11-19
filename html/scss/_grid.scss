@@ -1,0 +1,60 @@
+$columns: 16;
+$gut-width: 20%;
+$container-width: 100%;
+$column-width: ($container-width - (($columns - 1) * $gut-width))/$columns;
+$taille-m : 640px;
+$taille-l: 1220px;
+
+@mixin grid($columns, $total-columns) {
+	 	width: ( $columns * (100 / $total-columns) ) + 0%;
+    	float: left;
+		position : relative;
+		min-height:1px;  
+}
+
+.row {
+	margin: 0;
+	&:before,
+	&:after{
+		content : "";
+		display:table;
+		clear : both;
+	}
+
+}
+
+@for $i from 1 through $columns {
+	.col-lg-#{$i}{
+	 @include grid($i, $columns);
+	}
+	.offset-lg-#{$i}{
+	  margin-left : $i / $columns * 100%;
+	}
+}
+
+@media only screen and (max-width : $taille-m)
+{
+	.col-sm-center{
+		margin : 0 auto;
+		float : none;
+	}
+	@for $i from 0 through $columns {
+		.col-sm-#{$i}{
+		 	@include grid($i, $columns);
+		}
+		.offset-sm-#{$i}{
+	  		margin-left : $i / $columns * 100%;
+		}
+	}
+}
+@media only screen and (min-width : $taille-m) and  (max-width : $taille-l) 
+{
+	@for $i from 0 through $columns {
+		.col-md-#{$i}{
+		 	@include grid($i, $columns);
+		}
+		.offset-md-#{$i}{
+			  margin-left : $i / $columns * 100%;
+			}
+	}
+}

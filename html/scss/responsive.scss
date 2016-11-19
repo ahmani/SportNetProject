@@ -1,0 +1,220 @@
+$taille-m : 640px;
+$taille-l: 1220px;
+
+
+@media  screen and (max-width: $taille-m)
+{
+
+	.container{
+			.nav-toggle{
+							display:block;
+					}
+			p.bjr{
+					display:none;
+				}
+		.resp-menu {
+				display: block !important;
+			    padding: 16px 10px;
+			    margin-top: 8px;
+			    min-width: 70px;
+			    font-size: 29px;
+			    color: #fff;
+			    float: right;
+			}
+		.header-div
+		{
+			margin-top : 58px;
+		}
+		.right-menu
+		{
+			display: none;
+		}
+		.banniere
+		{
+			display:none;
+		}
+		.content {
+			    margin-top: 0px !important;
+			}
+		.nav-toggle
+		{
+			a#connexion, a#inscription {
+				margin-top: 20px;
+    			margin-left: 10px;
+			}
+				    background-color: #8cc63e;
+				    top: 0;
+				    margin-bottom: 10px;
+				    position: absolute;
+		}
+		.main-nav{
+			display:none;
+		}
+		.logo{
+			text-align:center;
+		}
+		nav{
+			float: none;
+		
+		li
+		{
+			display: block !important;
+		}
+		.logo
+			{
+				position: relative !important;
+				max-height: 71px;
+				    z-index: 0 !important;	
+			}
+			
+		}
+		.resp-nav
+		{
+			text-align: center;
+			margin-top: 53px !important;
+			border-radius: 34px;
+			position: absolute;
+			z-index: 99;
+			ul
+			{margin: 0px;
+               padding: 0px;
+           	}
+		}
+		.banniere
+		{
+			display: none !important;
+		}
+	  
+	}
+	
+	
+	.form-content 
+	{
+		.ing-page fieldset{
+			display: block;
+		}
+		&.home-page .inner-wrap-resp
+		{
+			display: block !important;
+			margin-bottom: 60px;
+		}
+		&.home-page .inner-wrap
+		{
+			display: none;
+		}
+		&.home-page fieldset{
+			display: none;
+		}
+		select {
+		    border-radius: 3px;
+		    border: 2px solid beige;
+		    color: #000;
+		    padding: 12px 8px 5px 16px;
+		    box-shadow: inset 1px 1px 4px beige;
+		    background: beige;
+		}
+		.btn-submit {
+    		width: 100%;
+		}
+	}
+
+	
+}
+
+@media only screen and (min-width : $taille-m) and (max-width : $taille-l)
+{	
+	
+	.inner-wrap div {
+    margin-top: 10px;
+	}
+
+	.container{
+				.nav-toggle{
+							display:block;
+					}
+				p.bjr{
+					display:none;
+				}
+		.resp-menu {
+				display: block !important;
+			    padding: 16px 10px;
+			    margin-top: 8px;
+			    min-width: 70px;
+			    font-size: 29px;
+			    color: #fff;
+			    float: right;
+			}
+		.header-div
+		{
+			margin-top : 58px;
+		}
+		.right-menu
+		{
+			display: none;
+		}
+		.banniere
+		{
+			display:none;
+		}
+		.content {
+			    margin-top: 0px !important;
+			}
+		.nav-toggle
+		{
+			a#connexion, a#inscription {
+				margin-top: 20px;
+    			margin-left: 10px;
+			}
+				    background-color: #8cc63e;
+				    top: 0;
+				    margin-bottom: 10px;
+				    position: absolute;
+		}
+		.main-nav{
+			display:none;
+		}
+		.logo{
+			text-align:center;
+		}
+		nav{
+			float: none;
+		
+		li
+		{
+			display: block !important;
+		}
+		.logo
+			{
+				position: relative !important;
+				max-height: 71px;
+				    z-index: 0 !important;	
+			}
+			
+		}
+		.resp-nav
+		{
+			text-align: center;
+			margin-top: 53px !important;
+			border-radius: 34px;
+			position: absolute;
+			z-index: 99;
+			ul
+			{margin: 0px;
+               padding: 0px;
+           	}
+		}
+		.banniere
+		{
+			display: none !important;
+		}
+	  
+	}
+}
+
+@media only screen and (min-width : $taille-m) and (min-width : $taille-l)
+{
+	.resp-nav
+	{
+		display:none;
+	}
+}
